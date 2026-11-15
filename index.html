@@ -183,6 +183,20 @@
  .dress span{display:block;margin-top:6px;font-weight:300;font-size:15px;color:var(--dune)}
  @media(max-width:760px){.dress{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 14px}.dress b{font-size:24px}}
 
+ /* faq: native details, name="faq" keeps one open at a time */
+ .faq{margin-top:48px;border-bottom:1px solid var(--hair2)}
+ .faq details{border-top:1px solid var(--hair2)}
+ .faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:24px;padding:24px 0;font-family:var(--disp);font-weight:400;font-size:clamp(21px,2.4vw,30px);line-height:1.2;color:var(--sand);transition:color .3s var(--ease)}
+ .faq summary::-webkit-details-marker{display:none}
+ .faq summary::after{content:"";flex:none;width:16px;height:16px;background:linear-gradient(var(--glow),var(--glow)) center/100% 1px no-repeat,linear-gradient(var(--glow),var(--glow)) center/1px 100% no-repeat;transition:transform .35s var(--ease)}
+ .faq summary:hover{color:var(--glow)}
+ .faq details[open] summary{color:var(--glow)}
+ .faq details[open] summary::after{transform:rotate(45deg)}
+ .faq .a{padding:0 0 30px;font-weight:300;font-size:16.5px;line-height:1.6;color:var(--sand)}
+ .faq .a p+p{margin-top:10px}
+ .faq .a b{font-weight:500;color:var(--glow)}
+ .faq .a img{width:min(100%,480px);height:auto;border:1px solid var(--hair2);border-radius:var(--r);margin-bottom:14px}
+
  footer{padding:80px 0 100px;border-top:1px solid var(--hair2);overflow:hidden}
  footer p{font-weight:300;font-size:16px;color:var(--dune)}
  footer p a{color:var(--glow);border-bottom:1px solid var(--amber)}
@@ -191,7 +205,7 @@
 </head>
 <body>
 <div class="grain" aria-hidden="true"></div>
-<nav id="nav"><div class="wrap"><a class="logo" href="#top"><span>SF SBK Congress</span><i>|</i><span>Nov 19-23</span><i>|</i><b>Team</b></a><div class="nl"><a href="#getting-there">Getting there</a><a href="#schedule">Schedule</a><a href="#workshops">Workshops</a><a href="#comps">Comps</a><a href="#dress">Dress code</a></div></div></nav>
+<nav id="nav"><div class="wrap"><a class="logo" href="#top"><span>SF SBK Congress</span><i>|</i><span>Nov 19-23</span><i>|</i><b>Team</b></a><div class="nl"><a href="#getting-there">Getting there</a><a href="#schedule">Schedule</a><a href="#workshops">Workshops</a><a href="#comps">Comps</a><a href="#dress">Dress code</a><a href="#faq">FAQ</a></div></div></nav>
 
 <header id="top">
  <div class="still" aria-hidden="true"></div>
@@ -603,6 +617,22 @@
    <a href="assets/fri-dress.jpg" target="_blank" rel="noopener"><img src="assets/fri-dress.jpg" width="1024" height="1535" loading="lazy" alt="Friday dress code poster: white, champagne and roses"><b>Friday</b><span>White, champagne and roses</span></a>
    <a href="assets/sat-dress.jpg" target="_blank" rel="noopener"><img src="assets/sat-dress.jpg" width="1024" height="1536" loading="lazy" alt="Saturday dress code poster: bold and confident"><b>Saturday</b><span>Bold and confident</span></a>
    <a href="assets/sun-dress.jpg" target="_blank" rel="noopener"><img src="assets/sun-dress.jpg" width="1024" height="1536" loading="lazy" alt="Sunday dress code poster: represent your culture or your sports team"><b>Sunday</b><span>Your culture or your sports team</span></a>
+  </div>
+ </div>
+</section>
+
+<section id="faq">
+ <div class="wrap">
+  <h2>FAQ</h2>
+  <div class="faq">
+   <details name="faq"><summary>Do I have to be there Wednesday and Thursday?</summary><div class="a"><p>No, those two nights are the pre-parties. The congress runs Friday to Sunday, and check-in opens <b>Thursday at 9 PM</b>.</p></div></details>
+   <details name="faq"><summary>What do I bring to check-in?</summary><div class="a"><p>A photo ID and your ticket, printed or on your phone.</p></div></details>
+   <details name="faq"><summary>Do I need my pass for rehearsal?</summary><div class="a"><p>Yes, you need the performer pass to get in. Tech rehearsal is 2 to 6 PM every day in Grand Ballroom D.</p></div></details>
+   <details name="faq"><summary>What doesn&rsquo;t the pass cover?</summary><div class="a"><p>Bootcamps and master classes. Every regular class is in, and so are the shows and the parties.</p></div></details>
+   <details name="faq"><summary>When are Carlitos and Cece teaching?</summary><div class="a"><p>Friday at 2 PM, Urban Bachata Social Combo, and Sunday at 10 AM, Bachata Sensual Partnerwork. Both are in Grand Ballroom C.</p></div></details>
+   <details name="faq"><summary>I still don&rsquo;t have a ticket.</summary><div class="a"><p>Online sales close <b>Sunday Nov 15</b>. After that, message their WhatsApp at <span class="nw">415-794-2007</span>.</p></div></details>
+   <details name="faq"><summary>How late does it go?</summary><div class="a"><p>Friday and Saturday, night dancing starts at 11 PM and goes until about 7 AM. Sunday&rsquo;s closing night starts at 11 PM too.</p></div></details>
+   <details name="faq"><summary>Mark, what if I lost my room key?</summary><div class="a"><img src="assets/room-key.gif" width="480" height="348" loading="lazy" alt="Homer Simpson pointing and laughing while Marge and Lisa laugh behind him"><p>Then go see the front desk.</p></div></details>
   </div>
  </div>
 </section>
